@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.5" orientation="orthogonal" renderorder="right-down" width="16" height="17" tilewidth="40" tileheight="40" infinite="0" nextlayerid="7" nextobjectid="23">
+ <editorsettings>
+  <export target="toriel_outside1.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="light" type="bool" value="true"/>
+ </properties>
+ <tileset firstgid="1" source="../tilesets/toroutside.tsx"/>
+ <imagelayer id="6" name="Слой изображений 1">
+  <image source="../../../assets/sprites/rooms/toriel_outside.png" width="640" height="800"/>
+ </imagelayer>
+ <objectgroup color="#9886dd" id="3" name="collision">
+  <object id="1" x="80" y="0" width="400" height="335"/>
+  <object id="2" x="215" y="310" width="240" height="40"/>
+  <object id="3" x="0" y="0" width="640" height="120"/>
+  <object id="4" x="600" y="120" width="40" height="440"/>
+  <object id="6" x="440" y="560" width="200" height="240"/>
+  <object id="7" x="0" y="560" width="240" height="240"/>
+  <object id="8" x="0" y="520" width="240" height="40"/>
+  <object id="9" x="0" y="480" width="160" height="40"/>
+  <object id="10" x="0" y="440" width="80" height="40"/>
+  <object id="11" x="0" y="0" width="40" height="440"/>
+  <object id="12" x="40" y="0" width="40" height="120"/>
+  <object id="19" x="495" y="200" width="80" height="120"/>
+ </objectgroup>
+ <objectgroup color="#f06565" id="4" name="markers">
+  <object id="14" name="entry_home" x="335" y="385">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="objects">
+  <object id="18" name="interactable" x="495" y="200" width="80" height="120">
+   <properties>
+    <property name="cutscene" value="misc/torCar"/>
+   </properties>
+  </object>
+  <object id="21" name="script" x="280" y="320" width="120" height="80">
+   <properties>
+    <property name="cutscene" value="torielOutside"/>
+   </properties>
+  </object>
+  <object id="22" x="-120" y="360"/>
+ </objectgroup>
+</map>

@@ -1,0 +1,18 @@
+{
+    "id": "ch3",
+    "name": "Chapter 3",
+    "subtitle": "(Fan)",
+
+    "version": "v1.0.0",
+    "engineVer": "v0.6.0-dev",
+
+    "map": "schooldoor",
+    "chapter": 2,
+
+    "party": ["kris", "susie"],
+
+    "transition": false,
+
+    "quickReload": true,
+    "hidden": false
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.5" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="9">
+ <editorsettings>
+  <export format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="music" value="castletown"/>
+ </properties>
+ <imagelayer id="2" name="Слой изображений 1">
+  <image source="../../../assets/sprites/rooms/darkwest.png" width="640" height="480"/>
+ </imagelayer>
+ <objectgroup id="3" name="collision" tintcolor="#f8706b">
+  <object id="2" x="120" y="240" width="40" height="160"/>
+  <object id="3" x="160" y="360" width="520" height="40"/>
+  <object id="4" x="160" y="240" width="480" height="40"/>
+ </objectgroup>
+ <objectgroup id="4" name="objects">
+  <object id="5" x="680" y="-40"/>
+  <object id="6" name="transition" x="620" y="280" width="40" height="80">
+   <properties>
+    <property name="map" value="castle_area2"/>
+    <property name="marker" value="darkwest"/>
+   </properties>
+  </object>
+  <object id="8" name="npc" x="400" y="320">
+   <properties>
+    <property name="actor" value="hacker"/>
+    <property name="cutscene" value="npc/hacker1"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="markers">
+  <object id="7" name="entry" x="600" y="320">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.5" orientation="orthogonal" renderorder="right-down" width="24" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="7" nextobjectid="16">
+ <editorsettings>
+  <export target="ralsei_castle3f.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="music" value="castletown"/>
+ </properties>
+ <tileset firstgid="1" name="castle" tilewidth="40" tileheight="40" spacing="4" margin="2" tilecount="132" columns="11">
+  <image source="../../../assets/sprites/tilesets/ralseicastle_1.png" width="484" height="528"/>
+ </tileset>
+ <layer id="1" name="tiles" width="24" height="12">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,3,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,6,54,54,54,5,0,0,
+0,3,22,54,54,54,54,54,54,54,4,54,54,6,54,54,54,54,54,54,4,5,0,0,
+0,2,54,54,54,54,54,54,54,54,54,22,54,54,54,54,54,54,54,6,54,5,0,0,
+0,3,54,22,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,18,0,0,
+0,19,20,20,36,20,20,20,20,20,36,20,20,20,20,20,20,20,36,20,20,21,0,0,
+0,82,82,68,82,82,82,82,66,52,82,82,82,82,50,82,82,82,82,82,52,82,0,0,
+0,82,50,82,66,82,82,82,82,82,82,68,82,82,82,82,82,66,82,82,82,82,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,50,84,84,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,84,84,84,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,84,84,84,0,0
+</data>
+ </layer>
+ <imagelayer id="5" name="queenDoor" offsetx="200" offsety="124">
+  <image source="../../../assets/sprites/tilesetImages/door_queen.png" width="158" height="156"/>
+ </imagelayer>
+ <imagelayer id="6" name="ralseiDoor" offsetx="560" offsety="158">
+  <image source="../../../assets/sprites/tilesetImages/door_ralsei.png" width="86" height="122"/>
+ </imagelayer>
+ <objectgroup color="#ff1e00" id="2" name="collision">
+  <object id="1" x="40" y="240" width="200" height="40"/>
+  <object id="2" x="880" y="280" width="40" height="200"/>
+  <object id="3" x="40" y="360" width="720" height="120"/>
+  <object id="4" x="0" y="280" width="40" height="80"/>
+  <object id="8" x="640" y="240" width="240" height="40"/>
+  <object id="14" x="320" y="240" width="240" height="40"/>
+ </objectgroup>
+ <objectgroup color="#00ddff" id="3" name="objects">
+  <object id="5" name="transition" x="760" y="460" width="120" height="40">
+   <properties>
+    <property name="map" value="ralsei_castle2f"/>
+    <property name="marker" value="entry2"/>
+   </properties>
+  </object>
+  <object id="7" name="npc" x="160" y="320">
+   <properties>
+    <property name="actor" value="queenStatue"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="9" name="transition" x="560" y="240" width="80" height="40">
+   <properties>
+    <property name="map" value="ralsei_room"/>
+    <property name="marker" value="entry"/>
+   </properties>
+  </object>
+  <object id="15" name="transition" x="240" y="240" width="80" height="40">
+   <properties>
+    <property name="map" value="queenRoom"/>
+    <property name="marker" value="entry"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="markers">
+  <object id="6" name="entry1" x="820" y="440">
+   <point/>
+  </object>
+  <object id="10" name="ralseiRoom" x="600" y="320">
+   <point/>
+  </object>
+  <object id="11" name="spawn" x="800" y="320" width="40" height="40"/>
+  <object id="13" name="queen" x="280" y="320">
+   <point/>
+  </object>
+ </objectgroup>
+</map>
